@@ -1,0 +1,16 @@
+{
+  "name": "cuke-repro",
+  "version": "1.0.0",
+  "description": "Reproduction of cucumber parallel esm issue",
+  "main": "index.js",
+  "scripts": {
+    "cuke": "node ./node_modules/cucumber/bin/cucumber-js --require-module esm --require features/**/*.js",
+    "cuke-parallel": "node ./node_modules/cucumber/bin/cucumber-js --require-module esm --require features/**/*.js --parallel 2"
+  },
+  "author": "Aaron Pool",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "esm": "^3.2.25"
+  }
+}
